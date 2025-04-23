@@ -108,39 +108,47 @@ export default function Home() {
                   </Link>
                 </Button>
               </div>
-              <div className="mt-8 flex items-center gap-4">
-                <div className="flex -space-x-2">
-                  <Image
-                    src="https://us.123rf.com/450wm/peus/peus1407/peus140700002/30257270-belle-brune-cheveux-longs-boucl%C3%A9s-femme-marocaine-dans-la-ville.jpg"
-                    alt="Avatar"
-                    width={40}
-                    height={40}
-                    className="rounded-full border-2 border-white"
-                  />
-                  <Image
-                    src="https://i.pinimg.com/originals/21/44/fe/2144fe053267e082462f101a7b283356.jpg"
-                    alt="Avatar"
-                    width={40}
-                    height={40}
-                    className="rounded-full border-2 border-white"
-                  />
-                  <Image
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRimVMMRONInhU6AILiUvFOQYXaIWBaS5EtaQ&s"
-                    alt="Avatar"
-                    width={40}
-                    height={40}
-                    className="rounded-full border-2 border-white"
-                  />
-                </div>
-                <div className="flex items-center gap-1">
-                  <Star className="h-5 w-5 fill-secondary text-secondary" />
-                  <Star className="h-5 w-5 fill-secondary text-secondary" />
-                  <Star className="h-5 w-5 fill-secondary text-secondary" />
-                  <Star className="h-5 w-5 fill-secondary text-secondary" />
-                  <Star className="h-5 w-5 fill-secondary text-secondary" />
-                </div>
-                <span className="text-sm text-gray-600">Plus de 200 clientes satisfaites</span>
-              </div>
+                    <div className="mt-8 flex flex-col sm:flex-row sm:items-center sm:gap-4 gap-3">
+        {/* Avatars */}
+        <div className="flex justify-center sm:justify-start -space-x-2">
+          <Image
+            src="https://us.123rf.com/450wm/peus/peus1407/peus140700002/30257270-belle-brune-cheveux-longs-boucl%C3%A9s-femme-marocaine-dans-la-ville.jpg"
+            alt="Avatar"
+            width={40}
+            height={40}
+            className="rounded-full border-2 border-white"
+          />
+          <Image
+            src="https://i.pinimg.com/originals/21/44/fe/2144fe053267e082462f101a7b283356.jpg"
+            alt="Avatar"
+            width={40}
+            height={40}
+            className="rounded-full border-2 border-white"
+          />
+          <Image
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRimVMMRONInhU6AILiUvFOQYXaIWBaS5EtaQ&s"
+            alt="Avatar"
+            width={40}
+            height={40}
+            className="rounded-full border-2 border-white"
+          />
+        </div>
+
+        {/* Étoiles */}
+        <div className="flex justify-center sm:justify-start items-center gap-1">
+          <Star className="h-5 w-5 fill-secondary text-secondary" />
+          <Star className="h-5 w-5 fill-secondary text-secondary" />
+          <Star className="h-5 w-5 fill-secondary text-secondary" />
+          <Star className="h-5 w-5 fill-secondary text-secondary" />
+          <Star className="h-5 w-5 fill-secondary text-secondary" />
+        </div>
+
+        {/* Texte */}
+        <span className="text-sm text-center sm:text-left text-gray-600">
+          Plus de 200 clientes satisfaites
+        </span>
+      </div>
+
             </div>
             <div className="mt-12 lg:mt-0 lg:w-1/2">
               <div className="relative mx-auto w-full max-w-lg">
