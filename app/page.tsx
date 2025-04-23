@@ -498,103 +498,108 @@ export default function Home() {
           </div>
         </section>
         <section id="reserver" className="bg-primary/5 py-24">
-      <div className="container">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Réserver un Soin
-          </h2>
-          <p className="mt-4 text-lg text-gray-600">
-            Prenez rendez-vous pour découvrir nos soins et rituels de beauté marocains.
-          </p>
-        </div>
+  <div className="container px-4 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-2xl text-center">
+      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        Réserver un Soin
+      </h2>
+      <p className="mt-4 text-lg text-gray-600">
+        Prenez rendez-vous pour découvrir nos soins et rituels de beauté marocains.
+      </p>
+    </div>
 
-        <div className="mt-16 grid gap-8 lg:grid-cols-2">
-          {/* Colonne gauche : Informations Pratiques */}
-          <div className="rounded-2xl bg-white p-8 shadow-lg">
-            <h3 className="text-xl font-semibold">Informations Pratiques</h3>
-            <div className="mt-6 space-y-6">
-              {/* Horaires */}
-              <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
-                  <Clock className="h-5 w-5 text-rose-600" />
-                </div>
-                <div>
-                  <h4 className="font-medium">Horaires d'ouverture</h4>
-                  <p className="mt-2 text-gray-600">
-                    Lundi - Vendredi: 9h00 - 19h00<br />
-                    Samedi: 10h00 - 18h00<br />
-                    Dimanche: Fermé
-                  </p>
-                </div>
-              </div>
+    {/* Grid : 1 colonne sur mobile, 2 colonnes sur grand écran */}
+    <div className="mt-16 grid gap-8 grid-cols-1 lg:grid-cols-2">
+      
+      {/* Colonne gauche */}
+      <div className="rounded-2xl bg-white p-6 sm:p-8 shadow-lg">
+        <h3 className="text-xl font-semibold">Informations Pratiques</h3>
+        <div className="mt-6 space-y-6">
 
-              {/* Adresse */}
-              <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
-                  <MapPin className="h-5 w-5 text-rose-600" />
-                </div>
-                <div>
-                  <h4 className="font-medium">Adresse</h4>
-                  <p className="mt-2 text-gray-600">
-                    Casablanca<br />
-                    Aïn Chock
-                  </p>
-                </div>
-              </div>
-
-              {/* Contact */}
-              <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
-                  <Phone className="h-5 w-5 text-rose-600" />
-                </div>
-                <div>
-                  <h4 className="font-medium">Contact</h4>
-                  <p className="mt-2 text-gray-600">
-                    Téléphone(1): +212 6 14 48 26 85<br />
-                    Téléphone(2): +212 6 39 47 24 74<br /><br />
-                    WhatsApp(1): +212 6 14 48 26 85<br />
-                    WhatsApp(2): +212 6 39 47 24 74<br /><br />
-                    Email: Evaskincasablanca@gmail.com
-                  </p>
-                </div>
-              </div>
-
-              {/* WhatsApp Réservation */}
-              <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
-                  <WhatsApp className="h-5 w-5 text-rose-600" />
-                </div>
-                <div>
-                  <h4 className="font-medium">Réservation Rapide</h4>
-                  <p className="mt-2 text-gray-600">
-                    Contactez-nous directement sur WhatsApp pour une réponse rapide.
-                  </p>
-                  <a
-                    href="https://wa.me/212614482685?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20un%20soin."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button variant="outline" className="mt-2">
-                      <WhatsApp className="mr-2 h-4 w-4" />
-                      Réserver via WhatsApp
-                    </Button>
-                  </a>
-                </div>
-              </div>
+          {/* Horaires */}
+          <div className="flex items-start gap-4">
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
+              <Clock className="h-5 w-5 text-rose-600" />
+            </div>
+            <div>
+              <h4 className="font-medium">Horaires d'ouverture</h4>
+              <p className="mt-2 text-gray-600 text-sm sm:text-base">
+                Lundi - Vendredi: 9h00 - 19h00<br />
+                Samedi: 10h00 - 18h00<br />
+                Dimanche: Fermé
+              </p>
             </div>
           </div>
 
-          {/* Colonne droite : Image */}
-          <div className="flex items-center justify-center">
-            <img
-              src="https://odontoforma.com.br/wp-content/uploads/2020/10/hamoniza.jpg"
-              alt="Salle de soins"
-              className="rounded-2xl shadow-lg object-cover w-full h-full max-h-[500px]"
-            />
+          {/* Adresse */}
+          <div className="flex items-start gap-4">
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
+              <MapPin className="h-5 w-5 text-rose-600" />
+            </div>
+            <div>
+              <h4 className="font-medium">Adresse</h4>
+              <p className="mt-2 text-gray-600 text-sm sm:text-base">
+                Casablanca<br />
+                Aïn Chock
+              </p>
+            </div>
           </div>
+
+          {/* Contact */}
+          <div className="flex items-start gap-4">
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
+              <Phone className="h-5 w-5 text-rose-600" />
+            </div>
+            <div>
+              <h4 className="font-medium">Contact</h4>
+              <p className="mt-2 text-gray-600 text-sm sm:text-base">
+                Téléphone(1): +212 6 14 48 26 85<br />
+                Téléphone(2): +212 6 39 47 24 74<br /><br />
+                WhatsApp(1): +212 6 14 48 26 85<br />
+                WhatsApp(2): +212 6 39 47 24 74<br /><br />
+                Email: Evaskincasablanca@gmail.com
+              </p>
+            </div>
+          </div>
+
+          {/* WhatsApp */}
+          <div className="flex items-start gap-4">
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
+              <WhatsApp className="h-5 w-5 text-rose-600" />
+            </div>
+            <div>
+              <h4 className="font-medium">Réservation Rapide</h4>
+              <p className="mt-2 text-gray-600 text-sm sm:text-base">
+                Contactez-nous directement sur WhatsApp pour une réponse rapide.
+              </p>
+              <a
+                href="https://wa.me/212614482685?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20un%20soin."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" className="mt-2">
+                  <WhatsApp className="mr-2 h-4 w-4" />
+                  Réserver via WhatsApp
+                </Button>
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
-    </section>
+
+      {/* Colonne droite : image */}
+      <div className="flex items-center justify-center">
+        <img
+          src="https://odontoforma.com.br/wp-content/uploads/2020/10/hamoniza.jpg"
+          alt="Salle de soins"
+          className="rounded-2xl shadow-lg object-cover w-full h-auto max-h-[500px]"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
       </main>
       <footer className="bg-primary py-12 text-white">
   <div className="container">
