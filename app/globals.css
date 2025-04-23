@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 203 32% 34%; /* #3B5E73 - Bleu pétrole foncé */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 187 100% 33%; /* #0097A7 - Bleu canard */
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 200 18% 40%; /* #546E7A - Bleu gris foncé */
+    --muted-foreground: 200 13% 46%; /* #607D8B - Bleu clair désaturé */
+    --accent: 162 43% 39%; /* #388E7C - Vert mousse foncé */
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 203 32% 34%; /* #3B5E73 - Bleu pétrole foncé */
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 203 32% 34%; /* #3B5E73 - Bleu pétrole foncé */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 187 100% 33%; /* #0097A7 - Bleu canard */
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 200 18% 40%; /* #546E7A - Bleu gris foncé */
+    --muted-foreground: 200 13% 46%; /* #607D8B - Bleu clair désaturé */
+    --accent: 162 43% 39%; /* #388E7C - Vert mousse foncé */
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 203 32% 34%; /* #3B5E73 - Bleu pétrole foncé */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
